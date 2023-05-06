@@ -1,0 +1,92 @@
+$background : url("./assets/background.png");
+$white: #fff;
+$pink: #FFB7EF;
+$dark-purple: #330071;
+
+*{
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.app {
+    .container {
+
+    //LOGIN & REGISTER
+
+    .auth{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height:100vh;
+        background-image: $background;
+        color: $white;
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 3rem;
+            width:300px;
+            gap:1rem;
+            background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 4px );
+            -webkit-backdrop-filter: blur( 4px );
+            border-radius: 15px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            
+            input {
+               padding:10px;
+               border:none;
+               border-radius: 20px;
+               width:100%;
+            }
+
+            button {
+                font-family: 'Poppins', sans-serif;
+                padding:0 20px;
+                height:35px;
+                width:200px;
+                background-color:$pink;
+                color:$dark-purple;
+                font-weight:600;
+                font-size:14px;
+                border:none;
+                border-radius:15px;
+            }
+
+            p{
+                font-size: 12px;
+                text-align: center;
+                text-decoration:overline;
+                border-radius: 15px;
+            }
+
+            span {
+                font-size: 12px;
+                text-align: center;
+
+                a {
+                    color:$pink;
+                    text-decoration: none;
+
+                }
+            }
+
+        }
+    }
+
+    //NAVBAR
+    
+
+    }
+}
