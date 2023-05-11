@@ -9,8 +9,13 @@ const Write = () => {
     <div className="add">
       <div className="content">
         <input type="text" placeholder="Titre" />
-        <div className="editorContainer">
-          <ReactQuill theme="snow" value={value} onChange={setValue} />
+        <div className="editor-container">
+          <ReactQuill
+            className="editor"
+            theme="snow"
+            value={value}
+            onChange={setValue}
+          />
         </div>
       </div>
       <div className="menu">
@@ -23,9 +28,37 @@ const Write = () => {
             <b>Visibilité :</b> Tout le monde
           </span>
           <input style={{ display: "none" }} type="file" id="file" />
-          <label for="file">Importer une image</label>
+          <label className="file" for="file">
+            Importer une image
+          </label>
+          <div className="buttons">
+            <button>Enregistrer le brouillon</button>
+            <button>Publier</button>
+          </div>
         </div>
-        <div className="item">i2</div>
+        <div className="item">
+          <h1>Categories</h1>
+          <div className="cat">
+            <input type="radio" name="categories" value="art" id="art" />
+            <label for="art">Art</label>
+          </div>
+          <div className="cat">
+            <input type="radio" name="categories" value="tech" id="tech" />
+            <label for="tech">Tech</label>
+          </div>
+          <div className="cat">
+            <input type="radio" name="categories" value="ux" id="ux" />
+            <label for="ux">UX/UI</label>
+          </div>
+          <div className="cat">
+            <input type="radio" name="categories" value="job" id="job" />
+            <label for="job">Emploi</label>
+          </div>
+          <div className="cat">
+            <input type="radio" name="categories" value="learn" id="learn" />
+            <label for="art">Apprendre</label>
+          </div>
+        </div>
       </div>
     </div>
   );
